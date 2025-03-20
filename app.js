@@ -387,6 +387,7 @@ document.querySelector(".menu_bar").addEventListener("click", () => {
     icon.classList.add("fa-xmark"); // Cross icon
   } else {
     menu.style.display = "none";
+    
     icon.classList.remove("fa-xmark");
     icon.classList.add("fa-bars");
   }

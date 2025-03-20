@@ -956,7 +956,7 @@ header .song_side .popular_artist .item li img {
     width: 200px;
     height: 100vh;
     cursor: pointer;
-    /* display: none; */
+    display: none;
   }
   header .menu_side .song_side {
     width: 100%;

@@ -14,11 +14,12 @@ body {
   align-items: center;
 }
 header {
-  width: 85%;
+  width: 95%;
   height: 95%;
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 header .menu_side,
@@ -257,7 +258,6 @@ header .master_play h5 .subtitle {
 header .master_play .icons {
   font-size: 20px;
   color: #fff;
-  margin: 0px 20px 0px 40px;
 }
 header .master_play .icons i {
   cursor: pointer;
@@ -903,27 +903,49 @@ header .song_side .popular_artist .item li img {
 
 @media screen and (max-width: 850px) {
   header .menu_side {
-    height: 60%;
+    height: auto;
+    width: 90vw !important;
+    max-width: 470px;
   }
   header .menu_side .head h1 {
-    margin-left: 222px;
+    margin-left: 120px;
   }
   header .menu_side .Playlist {
     margin-top: 10px;
-    padding: 0px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  header .menu_side .menu_song li {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
   }
-  header .menu_side .Playlist h4 {
-    display: flex;
-    justify-content: center;
+  header .menu_side .Playlist {
+    width: 80%;
   }
   header .menu_song {
-    width: 100%;
     overflow-y: auto;
     height: 500px;
   }
+  header .menu_side .songItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .menu_side .menu_song li {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin: 10px 0px;
+    align-items: center;
+  }
+
   header .menu_side .Playlist span::before {
     display: none;
     list-style-type: none;
@@ -931,12 +953,12 @@ header .song_side .popular_artist .item li img {
 
   .menu_side {
     position: absolute;
-    min-width: 500px;
+    width: 200px;
     height: 100vh;
     cursor: pointer;
     /* display: none; */
   }
-  header .song_side {
+  header .menu_side .song_side {
     width: 100%;
   }
   header .song_side .content h2 {
@@ -976,6 +998,13 @@ header .song_side .popular_artist .item li img {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  header .menu_side,
+  .song_side {
+    width: 100%;
+  }
+  header .song_side {
+    width: 100%;
   }
   .song_side nav ul .menu_bar {
     display: block;

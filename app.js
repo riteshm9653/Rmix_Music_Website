@@ -12,105 +12,105 @@ const songs = [
                 on My Way <br>
                 <div class="subtitle">Alan Walker</div>
                 `,
-    poster: "./img/1.jpg",
+    poster: "./assets/img/1.jpg",
   },
   {
     id: "2",
     songName: `Alan Walker-Fade  <br>
               <div class="subtitle">Alan Walker</div>
               `,
-    poster: "./img/2.jpg",
+    poster: "./assets/img/2.jpg",
   },
   {
     id: "3",
     songName: `Cartoon-on    <br>
               <div class="subtitle">Daniel Levi</div>
               `,
-    poster: "./img/3.jpg",
+    poster: "./assets/img/3.jpg",
   },
   {
     id: "4",
     songName: `Warriyo-Mortal  <br>
               <div class="subtitle">Mortal</div>
               `,
-    poster: "./img/4.jpg",
+    poster: "./assets/img/4.jpg",
   },
   {
     id: "5",
     songName: `Ertugurlu Gazi   <br>
               <div class="subtitle">Ertungul</div>
               `,
-    poster: "./img/5.jpg",
+    poster: "./assets/img/5.jpg",
   },
   {
     id: "6",
     songName: ` Electronic Music  <brlectro>
               <div class="subtitle">E</div>
               `,
-    poster: "./img/6.jpg",
+    poster: "./assets/img/6.jpg",
   },
   {
     id: "7",
     songName: `Agar Tum Sath ho  <br>
               <div class="subtitle">Tamashaa</div>
               `,
-    poster: "./img/7.jpg",
+    poster: "./assets/img/7.jpg",
   },
   {
     id: "8",
     songName: `Sunna Hai  <br>
               <div class="subtitle">Neha kakker</div>
               `,
-    poster: "./img/8.jpg",
+    poster: "./assets/img/8.jpg",
   },
   {
     id: "9",
     songName: `Dilber   <br>
               <div class="subtitle">Satyameva jayate</div>
               `,
-    poster: "./img/9.jpg",
+    poster: "./assets/img/9.jpg",
   },
   {
     id: "10",
     songName: `Duniya  <br>
               <div class="subtitle">Luka chuppi</div>
               `,
-    poster: "./img/10.jpg",
+    poster: "./assets/img/10.jpg",
   },
   {
     id: "11",
     songName: `Lagdi Lahore Di   <br>
               <div class="subtitle">Street Dancer 3D</div>
               `,
-    poster: "./img/11.jpg",
+    poster: "./assets/img/11.jpg",
   },
   {
     id: "12",
     songName: `putt jatt  Da  <br>
               <div class="subtitle"> Putt jatt Da</div>
               `,
-    poster: "./img/12.jpg",
+    poster: "./assets/img/12.jpg",
   },
   {
     id: "13",
     songName: `Alan Walker-Fade  <br>
               <div class="subtitle">Alan Walker</div>
               `,
-    poster: "./img/13.jpg",
+    poster: "./assets/img/13.jpg",
   },
   {
     id: "14",
     songName: ` vaaste  <br>
               <div class="subtitle">Dhvani Bhanushali </div>
               `,
-    poster: "./img/14.jpg",
+    poster: "./assets/img/14.jpg",
   },
   {
     id: "15",
     songName: `Lut gaye  <br>
               <div class="subtitle">Jublic Nautiyaal</div>
               `,
-    poster: "./img/15.jpg",
+    poster: "./assets/img/15.jpg",
   },
 
   {
@@ -118,14 +118,14 @@ const songs = [
     songName: `sun rah hai na thu  <br>
               <div class="subtitle">Best</div>
               `,
-    poster: "./img/21.jpg",
+    poster: "./assets/img/21.jpg",
   },
   {
     id: "23",
     songName: ` Thank you  <br>
               <div class="subtitle">Ritesh Maurya</div>
               `,
-    poster: "./img/23.jpg",
+    poster: "./assets/img/23.jpg",
   },
 ];
 
@@ -196,7 +196,7 @@ Array.from(document.getElementsByClassName("playListplay")).forEach(
       makeAllPlays();
       e.target.classList.remove("fa-circle-play");
       e.target.classList.add("fa-circle-pause");
-      music.src = `./audio/${index}.mp3`;
+      music.src = `./assets/audio/${index}.mp3`;
       music.play();
       let song_title = songs.filter((song) => song.id == index);
       song_title.forEach((element) => {
@@ -204,7 +204,7 @@ Array.from(document.getElementsByClassName("playListplay")).forEach(
       });
       masterPlay.classList.remove("fa-play");
       masterPlay.classList.add("fa-pause");
-      poster_master_play.src = `./img/${index}.jpg`;
+      poster_master_play.src = `./assets/img/${index}.jpg`;
       wave[0].classList.add("active2");
       music.addEventListener("ended", () => {
         makeAllPlays();
@@ -315,7 +315,7 @@ back.addEventListener("click", () => {
   if (index < 1) {
     index = Array.from(document.getElementsByClassName("songItem")).length;
   }
-  music.src = `./audio/${index}.mp3`;
+  music.src = `./assets/audio/${index}.mp3`;
   music.play();
   let song_title = songs.filter((song) => song.id == index);
   song_title.forEach((element) => {
@@ -324,7 +324,7 @@ back.addEventListener("click", () => {
   makeAllPlays();
   document.getElementById(`${index}`).classList.remove("fa-circle-play");
   document.getElementById(`${index}`).classList.add("fa-circle-pause");
-  poster_master_play.src = `./img/${index}.jpg`;
+  poster_master_play.src = `./assets/img/${index}.jpg`;
   wave[0].classList.add("active2");
   makeallBackgrounds();
   Array.from(document.getElementsByClassName("songItem"))[
@@ -337,7 +337,7 @@ next.addEventListener("click", () => {
   if (index > Array.from(document.getElementsByClassName("songItem")).length) {
     index = 1;
   }
-  music.src = `./audio/${index}.mp3`;
+  music.src = `./assets/audio/${index}.mp3`;
   music.play();
   let song_title = songs.filter((song) => song.id == index);
   song_title.forEach((element) => {
@@ -346,7 +346,7 @@ next.addEventListener("click", () => {
   makeAllPlays();
   document.getElementById(`${index}`).classList.remove("fa-circle-play");
   document.getElementById(`${index}`).classList.add("fa-circle-pause");
-  poster_master_play.src = `./img/${index}.jpg`;
+  poster_master_play.src = `./assets/img/${index}.jpg`;
   wave[0].classList.add("active2");
   makeallBackgrounds();
   Array.from(document.getElementsByClassName("songItem"))[
@@ -375,4 +375,19 @@ left_scrolls.addEventListener("click", () => {
 });
 right_scrolls.addEventListener("click", () => {
   items.scrollLeft += 130;
+});
+
+const menu = document.getElementById("menu_side");
+const icon = document.getElementById("menuIcon");
+
+document.querySelector(".menu_bar").addEventListener("click", () => {
+  if (menu.style.display === "none" || menu.style.display === "") {
+    menu.style.display = "block";
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark"); // Cross icon
+  } else {
+    menu.style.display = "none";
+    icon.classList.remove("fa-xmark");
+    icon.classList.add("fa-bars");
+  }
 });

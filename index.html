@@ -11,13 +11,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="audio//logo.jpg" type="image/svg+xml" style="border-radius: 50%;"/>
+    <link rel="icon" href="./assets/audio/logo.jpg" type="image/svg+xml" style="border-radius: 50%;"/>
     <title>TCET-Rmix Music Player</title>
   </head>
   <body>
     <header>
-      <div class="menu_side">
-        <h1>RM_WORLD</h1>
+      <div class="menu_side" id="menu_side">
+        <div class="head">
+          <h1>RM_WORLD</h1>
+        </div>
         <div class="Playlist">
           <h4 class="active">
             <span></span><i class="fa-solid fa-music"></i>TCET-Rmix
@@ -28,7 +30,7 @@
         <div class="menu_song">
           <li class="songItem">
             <span>01</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -37,7 +39,7 @@
           </li>
           <li class="songItem">
             <span>02</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -46,7 +48,7 @@
           </li>
           <li class="songItem">
             <span>03</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -55,7 +57,7 @@
           </li>
           <li class="songItem">
             <span>04</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -64,7 +66,7 @@
           </li>
           <li class="songItem">
             <span>05</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -73,7 +75,7 @@
           </li>
           <li class="songItem">
             <span>06</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -82,7 +84,7 @@
           </li>
           <li class="songItem">
             <span>07</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -91,7 +93,7 @@
           </li>
           <li class="songItem">
             <span>08</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -100,7 +102,7 @@
           </li>
           <li class="songItem">
             <span>09</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -109,7 +111,7 @@
           </li>
           <li class="songItem">
             <span>10</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -118,7 +120,7 @@
           </li>
           <li class="songItem">
             <span>11</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -127,7 +129,7 @@
           </li>
           <li class="songItem">
             <span>12</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -136,7 +138,7 @@
           </li>
           <li class="songItem">
             <span>13</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -145,7 +147,7 @@
           </li>
           <li class="songItem">
             <span>14</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -154,7 +156,7 @@
           </li>
           <li class="songItem">
             <span>15</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -164,7 +166,7 @@
           
           <li class="songItem">
             <span>16</span>
-            <img src="./img/1.jpg" alt="Alan" />
+            <img src="./assets/img/1.jpg" alt="Alan" />
             <h5>
               on My Way
               <div class="subtitle">Alan W</div>
@@ -178,6 +180,9 @@
       <div class="song_side">
         <nav>
           <ul>
+            <div class="menu_bar"   >
+              <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </div>
             <li>Discover<span></span></li>
             <li>My Library</li>
             <li>Radios</li>
@@ -187,7 +192,7 @@
             <input type="text" placeholder="Search Muisc " />
           </div>
           <div class="user">
-            <img src="./img/ritesh.jpg" alt="Ritesh" />
+            <img src="./assets/img/ritesh.jpg" alt="Ritesh" />
           </div>
         </nav>
         <div class="content">
@@ -217,7 +222,7 @@
           <ul class="pop_song">         
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="1"></i>
               </div>
               <h5>
@@ -227,17 +232,16 @@
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="2"></i>
               </div>
               <h5>
                 on My Way
               </h5>
-                <div class="subtitle">Alan Walker</div>
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="3"></i>
               </div>
               <h5>
@@ -246,7 +250,7 @@
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="4"></i>
               </div>
               <h5>
@@ -255,7 +259,7 @@
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="5"></i>
               </div>
               <h5>
@@ -264,7 +268,7 @@
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="6"></i>
               </div>
               <div class="">
@@ -276,7 +280,7 @@
 
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="7"></i>
               </div>
               <h5>
@@ -285,7 +289,7 @@
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="8"></i>
               </div>
               <h5>
@@ -294,7 +298,7 @@
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="9"></i>
               </div>
               <h5>
@@ -303,7 +307,7 @@
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play"  id ="10"></i>
               </div>
               <h5>
@@ -312,7 +316,7 @@
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="11"></i>
               </div>
               <h5>
@@ -321,7 +325,7 @@
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="12"></i>
               </div>
               <h5>
@@ -330,7 +334,7 @@
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="13"></i>
               </div>
               <h5>
@@ -339,7 +343,7 @@
             </li>
             <li class="songItem" id="songItem">
               <div class="img_play">
-                <img src="./img/1.jpg" alt="Alan" />
+                <img src="./assets/img/1.jpg" alt="Alan" />
                 <i class="fa-solid playListplay fa-circle-play" id ="14"></i>
               </div>
               <h5>
@@ -358,78 +362,78 @@
           </div>
           <div class="item" id="items">
             <li>
-            <img src="./img/arjit.jpg" alt="arjit" title="Arjit Singh" />
+            <img src="./assets/img/arjit.jpg" alt="arjit" title="Arjit Singh" />
           </li>
           <li>
-            <img src="./img/alan.jpg" alt="alain" title="Alan Walker" />
+            <img src="./assets/img/alan.jpg" alt="alain" title="Alan Walker" />
           </li>
           <li>
-            <img src="./img/atif.jpg" alt="Atif" title="Atif " />
+            <img src="./assets/img/atif.jpg" alt="Atif" title="Atif " />
           </li>
           <li>
-            <img src="./img/jubin Nautiyal.jpg" alt="arjit" title="Arjit Singh" />
+            <img src="./assets/img/jubin Nautiyal.jpg" alt="arjit" title="Arjit Singh" />
           </li>
           <li>
-            <img src="./img/honey.jpg" alt="arjit" title="Arjit Singh" />
+            <img src="./assets/img/honey.jpg" alt="arjit" title="Arjit Singh" />
           </li>
           <li>
-            <img src="./img/guru.jpg" alt="Gutu" title="Gutu" title="Neha Kakkar" />
+            <img src="./assets/img/guru.jpg" alt="Gutu" title="Gutu" title="Neha Kakkar" />
           </li>
           <li>
-            <img src="./img/justin-bieber-lede.jpg" alt="arjit" title="Justin Bieber" />
+            <img src="./assets/img/justin-bieber-lede.jpg" alt="arjit" title="Justin Bieber" />
           </li>  
             <li>
-            <img src="./img/honey.jpg" alt="arjit" title="Honey Singh" />
+            <img src="./assets/img/honey.jpg" alt="arjit" title="Honey Singh" />
           </li>
           <li>
-            <img src="./img/dhvani.jpg" alt="arjit" title="Dhvani" />
+            <img src="./assets/img/dhvani.jpg" alt="arjit" title="Dhvani" />
           </li>
 
           <li>
-            <img src="./img/guru.jpg" alt="Gutu" title="Gutu" title="Neha Kakkar" />
+            <img src="./assets/img/guru.jpg" alt="Gutu" title="Gutu" title="Neha Kakkar" />
           </li>
           <li>
-            <img src="./img/justin-bieber-lede.jpg" alt="arjit" title="Justin Bieber" />
+            <img src="./assets/img/justin-bieber-lede.jpg" alt="arjit" title="Justin Bieber" />
           </li>  
             <li>
-            <img src="./img/honey.jpg" alt="arjit" title="Honey Singh" />
+            <img src="./assets/img/honey.jpg" alt="arjit" title="Honey Singh" />
           </li>
           <li>
-            <img src="./img/arjit.jpg" alt="arjit" title="Arjit Singh" />
+            <img src="./assets/img/arjit.jpg" alt="arjit" title="Arjit Singh" />
           </li>
           <li>
-            <img src="./img/alan.jpg" alt="alain" title="Alan Walker" />
+            <img src="./assets/img/alan.jpg" alt="alain" title="Alan Walker" />
           </li>
           <li>
-            <img src="./img/atif.jpg" alt="Atif" title="Atif " />
+            <img src="./assets/img/atif.jpg" alt="Atif" title="Atif " />
           </li>
           <li>
-            <img src="./img/jubin Nautiyal.jpg" alt="arjit" title="Arjit Singh" />
+            <img src="./assets/img/jubin Nautiyal.jpg" alt="arjit" title="Arjit Singh" />
           </li>
           <li>
-            <img src="./img/honey.jpg" alt="arjit" title="Arjit Singh" />
+            <img src="./assets/img/honey.jpg" alt="arjit" title="Arjit Singh" />
           </li>
           <li>
-            <img src="./img/guru.jpg" alt="Gutu" title="Gutu" title="Neha Kakkar" />
+            <img src="./assets/img/guru.jpg" alt="Gutu" title="Gutu" title="Neha Kakkar" />
           </li>
           <li>
-            <img src="./img/justin-bieber-lede.jpg" alt="arjit" title="Justin Bieber" />
+            <img src="./assets/img/justin-bieber-lede.jpg" alt="arjit" title="Justin Bieber" />
           </li>  
             <li>
-            <img src="./img/honey.jpg" alt="arjit" title="Honey Singh" />
+            <img src="./assets/img/honey.jpg" alt="arjit" title="Honey Singh" />
           </li>
           <li>
-            <img src="./img/dhvani.jpg" alt="arjit" title="Dhvani" />
+            <img src="./assets/img/dhvani.jpg" alt="arjit" title="Dhvani" />
           </li>
 
           <li>
-            <img src="./img/guru.jpg" alt="Gutu" title="Gutu" title="Neha Kakkar" />
+            <img src="./assets/img/guru.jpg" alt="Gutu" title="Gutu" title="Neha Kakkar" />
           </li>
           <li>
-            <img src="./img/justin-bieber-lede.jpg" alt="arjit" title="Justin Bieber" />
+            <img src="./assets/img/justin-bieber-lede.jpg" alt="arjit" title="Justin Bieber" />
           </li>  
             <li>
-            <img src="./img/honey.jpg" alt="arjit" title="Honey Singh" />
+            <img src="./assets/img/honey.jpg" alt="arjit" title="Honey Singh" />
           </li>
         </div>
           </div>
@@ -441,7 +445,7 @@
           <div class="wave1"></div>
           <div class="wave1"></div>
         </div>
-        <img src="./img/1.jpg" alt="alon" id="poster_master_play" />
+        <img src="./assets/img/1.jpg" alt="alon" id="poster_master_play" />
         <h5 id="title">
           on My Way
           <div class="subtitle">Alan W</div>
